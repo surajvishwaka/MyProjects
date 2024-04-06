@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music UI Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="wrapper">
+    <div class="music-container" id="wrapper1">
+        <button id="btn1">
+            <button id="btn2">Enter</button>
+            <i class="fa-solid fa-caret-left"></i>
+            <i class="fa-solid fa-caret-right" id="play1"></i>
+            <i class="fa-solid fa-sort-up" id="play2"></i>
+            <i class="fa-solid fa-sort-down" id="play3"></i>
+        </button>
+        <div class="circle">
+            <i class="fa-solid fa-up-right-and-down-left-from-center fa-rotate-90"></i>
+        </div>
+        <div class="music-content">
+            <div class="image">
+                <img src="images/rrr1.jpg">
+                <span class="marque">
+                    <marquee behavior="" direction="">RRR Songs (Audio Jukebox) | NTR, Ram Charan...mp3</marquee>
+                </span>
+            </div>
+        </div>
+        <div class="range"></div>
+        <div class="resizer"></div>
+    </div>
+    <div class="music-container2">
+        <div class="button-group">
+            <button class="btns" id="menu">Menu</button>
+            <button class="btns" id="title">Title</button>
+            <button class="btns" id="eject">Eject</button>
+        </div>
+        <div class="music-slider">
+            <input type="range" name="" id="slider">
+        </div>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-stop"></i>
+        <i class="fa-solid fa-forward"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <span class="equalizer">Equalizer</span>
+        <span class="plays"><i class="fa-sharp fa-solid fa-play"></i></span>
+        <span class="activate">ACTIVATE <span class="check-box"><input type="checkbox" name="checkbox"
+                    id="checker"></span> </span>
+    </div>
+    <!-- <button onclick="showMenu()">click</button> -->
+    <button onclick="showMenu()" class="close-container">
+        <i class="fa-solid fa-grip-lines-vertical"></i>
+    </button>
+    <div class="big">
+        <div class="setting-container">
+            <div class="setting-nested">
+                <p>Settings <span id="audio1">AUDIO</span><span id="audio3"><i id="audio2" class="fa-solid fa-play"></i></span></p>
+            </div>
+            <button class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="dot-circle">
+                <i class="fa-regular fa-circle-dot"></i>
+            </button>
+            <button class="comment">
+                <i class="fa-regular fa-comment-dots"></i>
+            </button>
+            <button class="list">
+                <i class="fa-solid fa-list-ul"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,540 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root {
+    --pink: #ff74a4;
+    --violet: #9f6ea3;
+}
+
+.music-container {
+    background: white;
+    border-left: 1px solid #828385;
+    border-bottom: 1px solid #828385;
+    border-top: 1px solid #828385;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252628;
+}
+
+.music-container2 {
+    border-right: 1px solid #828385;
+    border-bottom: 1px solid #828385;
+    border-top: 1px solid #828385;
+    height: 160px;
+    width: 480px;
+    background: #252628;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+    position: relative;
+    width: 100%;
+    /* left: 220px; */
+    background-image: url("https://wallpaperaccess.com/full/4589368.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.music-container2 {
+    position: absolute;
+    top: 0px;
+    left: 179px;
+}
+
+#btn1 {
+    border: 1px solid #828385;
+    z-index: 1;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: #404143;
+}
+
+#btn2 {
+    border: 1px solid #828385;
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    color: white;
+    background: #595B5C;
+    cursor: pointer;
+}
+
+.fa-solid {
+    z-index: 1;
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    left: 125px;
+    cursor: pointer;
+}
+
+#play1 {
+    position: absolute;
+    z-index: 1;
+    left: 228px;
+    cursor: pointer;
+}
+
+#play2 {
+    position: absolute;
+    top: 24px;
+    left: 176px;
+    cursor: pointer;
+}
+
+#play3 {
+    position: absolute;
+    left: 177px;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+.resizer {
+    border: 1px solid #828385;
+    position: absolute;
+    width: 244px;
+    height: 50px;
+    top: 110px;
+    left: 265px;
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.circle {
+    border: 1px solid #828385;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    top: 126px;
+    z-index: 1;
+    left: 230px;
+    background: #595B5C;
+}
+
+.fa-backward-step {
+    position: absolute;
+    top: 120px;
+    left: 110px;
+    cursor: pointer;
+}
+
+.fa-forward-step {
+    position: absolute;
+    top: 120px;
+    left: 295px;
+    cursor: pointer;
+}
+
+.fa-backward {
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    cursor: pointer;
+}
+
+.fa-forward {
+    position: absolute;
+    top: 120px;
+    left: 260px;
+    cursor: pointer;
+}
+
+.fa-play {
+    position: absolute;
+    top: 118px;
+    left: 180px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.fa-stop {
+    position: absolute;
+    top: 117px;
+    font-size: 1.3rem;
+    left: 220px;
+    cursor: pointer;
+}
+
+.fa-rotate-90 {
+    position: absolute;
+    left: 8px;
+    font-size: 0.7rem;
+    top: 7px;
+    cursor: pointer;
+}
+
+.equalizer {
+    color: #b2b2b2;
+    position: absolute;
+    font-size: 0.7rem;
+    z-index: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 138px;
+    left: 96px;
+    cursor: default;
+}
+
+.plays {
+    position: absolute;
+    top: 26px;
+    left: -35px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.fa-sharp {
+    font-size: 0.4rem;
+    color: grey;
+}
+
+.activate {
+    color: white;
+    font-size: 0.6rem;
+    z-index: 1000;
+    position: absolute;
+    top: 142px;
+    left: 259px;
+    cursor: default;
+}
+
+#checker {
+    position: absolute;
+    top: -2px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.music-content {
+    border: 1px solid #9696a7;
+    width: 244px;
+    height: 59px;
+    z-index: 1;
+    position: absolute;
+    left: 265px;
+    top: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 0px #484949f7;
+}
+
+.range {
+    z-index: 1;
+    position: absolute;
+    left: 307px;
+    top: 87px;
+    height: 4px;
+    width: 159px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.range .progress-bar {
+    height: inherit;
+    width: 50%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, blue 0%, blue 100%);
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 5px;
+    background: black;
+    border-radius: inherit;
+    top: 50%;
+    right: 78px;
+    transform: translateY(-50%);
+    background: inherit;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.range:hover .progress-bar::before {
+    opacity: 1;
+}
+
+.range .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current1 {
+    position: absolute;
+    top: -5px;
+    left: -34px;
+}
+
+.current2 {
+    position: absolute;
+    top: -5px;
+    left: 166px;
+}
+
+.timer span {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+
+#range1 {
+    width: 159px;
+    height: 4px;
+}
+
+.button-group {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid yellow;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 42px;
+    justify-content: space-between;
+    height: 130px;
+    top: -30px;
+    left: 345px;
+}
+
+.btns {
+    margin-top: px;
+    height: 35px;
+    width: 65px;
+    border-radius: 5px;
+    color: white;
+    background-color: #404143;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.music-slider {
+    height: 132px;
+    width: 39px;
+    position: relative;
+    z-index: 1;
+    top: 11px;
+    left: 424px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#slider {
+    position: absolute;
+    z-index: 1;
+    top: 68px;
+    left: -26px;
+    height: 4px;
+    transform: rotate(-90deg);
+    width: 88px;
+    cursor: pointer;
+}
+
+.setting-container {
+    border: 1px solid black;
+    height: 150px;
+    width: 170px;
+    position: absolute;
+    top: 5.2px;
+    left: 659px;
+    background-color: #0f0f0fdc;
+}
+
+.close-container {
+    border: 1px solid black;
+    height: 160px;
+    width: 23px;
+    position: absolute;
+    top: 0;
+    left: 828px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #23272ae9;
+}
+
+.fa-grip-lines-vertical {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    font-size: 1.5rem;
+    left: 5.9px;
+    top: 65px;
+}
+
+.setting-nested {
+    border: 1px solid rgb(76, 76, 76);
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    padding: 7px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.496);
+    border-radius: 5px;
+}
+
+.setting-container .setting-nested p {
+    color: white;
+    z-index: 1;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#audio1 {
+    font-size: 0.7rem;
+    position: absolute;
+    left: 95px;
+}
+
+#audio2 {
+    position: absolute;
+    left: 135px;
+    font-size: 0.6rem;
+    top: 10px;
+}
+
+.search {
+    border: 1px solid rgb(0, 0, 0);
+    height: 35px;
+    width: 65px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: rgba(128, 128, 128, 0.304);
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 20px;
+    font-size: 1.2rem;
+}
+
+.dot-circle {
+    height: 35px;
+    width: 65px;
+    position: absolute;
+    border-radius: 5px;
+    top: 50px;
+    left: 90px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.304);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.list {
+    border: 1px solid rgb(0, 0, 0);
+    height: 35px;
+    width: 65px;
+    position: absolute;
+    border-radius: 5px;
+    left: 90px;
+    top: 100px;
+    background-color: rgba(128, 128, 128, 0.304);
+}
+
+.fa-list-ul {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 21px;
+    top: 7px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.comment {
+    border: 1px solid rgb(0, 0, 0);
+    height: 35px;
+    width: 65px;
+    background-color: rgba(128, 128, 128, 0.304);
+    position: absolute;
+    border-radius: 5px;
+    left: 10px;
+    top: 100px;
+}
+
+.fa-comment-dots {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.image {
+    border: 1px solid #828385;
+    height: 45px;
+    width: 100px;
+    border-radius: 3px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+
+.image img {
+    height: 40px;
+    width: 98px;
+}
+
+marquee {
+    color: white;
+    position: absolute;
+    width: 120px;
+    left: 10px;
+    font-size: 0.7rem;
+}
+
+.marque {
+    position: absolute;
+    width: 0px;
+
+}
+
+/* .big{
+            position: absolute;
+            top: 0px;
+            left: -169px;
+            z-index: -1;
+        } */
+.smenu {
+    left: -2px;
+}
+
+.names {
+    border: 1px solid white;
+    position: absolute;
+    top: 15px;
+    left: 108px;
+    width: 120px;
+    height: 29px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.label1 {
+    color: white;
+    font-size: 0.7rem;
+    padding: 0 2px;
+}
