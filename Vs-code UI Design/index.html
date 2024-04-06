@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="navbar">
+            <ul>
+                <img src="icons/code-stable.png" alt="logo">
+                <li id="li">
+                    <a href="#">File</a>
+                    <div class="megamenu">
+                        <div class="files">
+                            <span class="span01">New Text File</span>
+                            <span class="span01">Ctrl+N</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">New File...</span>
+                            <span class="span01">Ctrl+Alt+Windows+N</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">New Window</span>
+                            <span class="span01">Ctrl+Shift+N</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Open File...</span>
+                            <span class="span01">Ctrl+O</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Open Folder...</span>
+                            <span class="span01">Ctrl+K+Ctrl+O</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Open Workspace from File...</span>
+                        </div>
+                        <div class="files" id="multilevel">
+                            <span class="span01">Open Recent</span>
+                            <span class="span02">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Add Folder to Workspace...</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Save Workspace As...</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Duplicate Workspace</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Save</span>
+                            <span class="span01">Ctrl+S</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Save As...</span>
+                            <span class="span01">Ctrl+Shift+S</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Save All</span>
+                            <span class="span01">Ctrl+K S</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Share</span>
+                            <span class="span02">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Auto Save</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Preferences</span>
+                            <span class="span02">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Revert File</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Close Editor</span>
+                            <span class="span01">Ctrl+F4</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Close Folder</span>
+                            <span class="span01">Ctrl+K F</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Close Window</span>
+                            <span class="span01">Alt+F4</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Exit</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Edit</a>
+                    <div class="megamenu1">
+                        <div class="files">
+                            <span class="span01">Undo</span>
+                            <span class="span01">Ctrl+Z</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Redo</span>
+                            <span class="span01">Ctrl+Y</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Cut</span>
+                            <span class="span01">Ctrl+X</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Copy</span>
+                            <span class="span01">CtrL+C</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Paste</span>
+                            <span class="span01">Ctrl+V</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Find</span>
+                            <span class="span01">Ctrl+F</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Replace</span>
+                            <span class="span01">Ctrl+H</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Find in Files</span>
+                            <span class="span01">Ctrl+Shift+F</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Replace in Files</span>
+                            <span class="span01">Ctrl+Shift+H</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Toggle Line Commment</span>
+                            <span class="span01">Ctrl+/</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Toggle Block Comment</span>
+                            <span class="span01">Shift+Alt+A</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Emmet: Expend Abbreviation</span>
+                            <span class="span01">Tab</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Selection</a>
+                    <div class="megamenu2">
+                        <div class="files">
+                            <span class="span01">Select All</span>
+                            <span class="span01">Ctrl+A</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Expand Selection</span>
+                            <span class="span01">Shift+Alt+RightArrow</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Shrink Selection</span>
+                            <span class="span01">Shift+Alt+LeftArrow</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Copy Line Up</span>
+                            <span class="span01">Shift+Alt+UpArrow</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Copy Line Down</span>
+                            <span class="span01">Shift+Alt+DownArrow</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Move Line Up</span>
+                            <span class="span01">Alt+UpArrow</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Move Line Down</span>
+                            <span class="span01">Alt+DownArrow</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Duplicate Selection</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Add Cursor Above</span>
+                            <span class="span01">Ctrl+Alt+UpArrow</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Add Cursor Below</span>
+                            <span class="span01">Ctrl+Alt+DownArrow</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Add Cursors to Line Ends</span>
+                            <span class="span01">Shift+Alt+I</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Add Next Occurrences</span>
+                            <span class="span01">Ctrl+D</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Add Previous Occurrences</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Select All Occurrences</span>
+                            <span class="span01">Ctrl+Shift+L</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Switch to Ctrl+Click for Multi-Cursor</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Column Selection Mode</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">View</a>
+                    <div class="megamenu3">
+                        <div class="files">
+                            <span class="span01">Command Palette...</span>
+                            <span class="span01">Ctrl+Shift+P</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Open View...</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Appearance</span>
+                            <span class="span02">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Editor Layout</span>
+                            <span class="span02">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Explorer</span>
+                            <span class="span01">Ctrl+Shift+E</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Search</span>
+                            <span class="span01">Ctrl+Shift+F</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Source Control</span>
+                            <span class="span01">Ctrl+Shift+G</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Run</span>
+                            <span class="span01">Ctrl+Shift+D</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Extensions</span>
+                            <span class="span01">Ctrl+Shift+X</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Problems</span>
+                            <span class="span01">Ctrl+Shift+M</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Output</span>
+                            <span class="span01">Ctrl+Shift+U</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Debug Console</span>
+                            <span class="span01">Ctrl+Shift+Y</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Terminal</span>
+                            <span class="span01">Ctrl+`</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Word Wrap</span>
+                            <span class="span01">Alt+Z</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Sticky Scroll</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Go</a>
+                    <div class="megamenu4">
+                        <div class="files">
+                            <span class="span01">Back</span>
+                            <span class="span01">Alt+LeftArrow</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Forward</span>
+                            <span class="span01">Alt+RightArrow</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Last Edit Location</span>
+                            <span class="span01">Ctrl+K Ctrl+Q</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Switch Editor</span>
+                            <span class="span01">Ctrl+O</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Switch Group</span>
+                            <span class="span01">Ctrn+K+Ctrl+O</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Go to File...</span>
+                            <span class="span01">Ctrl+P</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Go to Symbol in Workspace...</span>
+                            <span class="span01">Ctrl+T</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Go to Symbol in Editor...</span>
+                            <span class="span01">Ctrl+Shift+O</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Go to Definition</span>
+                            <span class="span01">F12</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Go to Declaration</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Go to Type Definition</span>
+                            <span class="span01">Ctrl+S</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Go to Implementations</span>
+                            <span class="span01">Ctrl+F12</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Go to References</span>
+                            <span class="span01">Shift+F12</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Go to Line/Column...</span>
+                            <span class="span01">Ctrl+G</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Go to Bracket</span>
+                            <span class="span01">Ctrl+Shift+\</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Next Problem</span>
+                            <span class="span01">F8</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Prevoius Problem</span>
+                            <span class="span01">Shift+F8</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Next Change</span>
+                            <span class="span01">Alt+F3</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Previous Change</span>
+                            <span class="span01">Shift+Alt+F3</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Run</a>
+                    <div class="megamenu5">
+                        <div class="files">
+                            <span class="span01">Start Debugging</span>
+                            <span class="span01">F5</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Run Without Debugging</span>
+                            <span class="span01">Ctrl+F5</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Stop Debugging</span>
+                            <span class="span01">Shift+F5</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Restart Debugging</span>
+                            <span class="span01">Ctrl+Shift+F5</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Open Configurations</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Add Configuration...</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Step Over</span>
+                            <span class="span01">F10</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Step Into</span>
+                            <span class="span01">F11</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Step Out</span>
+                            <span class="span01">Shift+F11</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Continue</span>
+                            <span class="span01">F5</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Toggle Breakpoint</span>
+                            <span class="span01">F9</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">New Breakpoint</span>
+                            <span class="span02">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Enable All Breakpoints</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Disable All Breakpoints</span>
+                            <span class="span01">Ctrl+Shift+L</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Remove All Breakpoints</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Install Additional Debuggers...</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Terminal</a>
+                    <div class="megamenu6">
+                        <div class="files">
+                            <span class="span01">New Terminal</span>
+                            <span class="span01">Ctrl+Shift+`</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Split Terminal</span>
+                            <span class="span01">Ctrl+Shift+5</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Run Task...</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Run Build Task...</span>
+                            <span class="span01">CtrL+Shift+B</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Run Active File</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Run Selected Text</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Show Running Tasks...</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Restart Running Task...</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Terminate Task...</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Configure Tasks...</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Configure Default Build Task...</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                    <div class="megamenu7">
+                        <div class="files">
+                            <span class="span01">Welcome</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Show All Commands</span>
+                            <span class="span01">Ctrl+Shift+P</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Documenation</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Editor Playground</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Show Release Notes</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Keyboard Shortcuts Referance</span>
+                            <span class="span01">Ctrl+K Ctrl+R</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Video Tutorials</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Tips and Tricks</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Join Us on Twitter</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Search Feature Requests</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Report Issue</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">View License</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Privacy Statement</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Toggle Developer Tools</span>
+                        </div>
+                        <div class="files">
+                            <span class="span01">Open Process Explorer</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">Check for Updates...</span>
+                        </div>
+                        <hr>
+                        <div class="files">
+                            <span class="span01">About</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="arrow">
+                <abbr title="Go Back"><i class="fa-solid fa-arrow-left" id="leftarrow"></i></abbr>
+                <abbr title="Go Forward"><i class="fa-solid fa-arrow-right" id="rightarrow"></i></abbr>
+            </div>
+            <input type="search" placeholder="search files by name..." id="searching">
+            <i class="fa fa-x" style="color: rgb(255, 255, 255)"></i>
+        </div>
+        <hr style="border: 0.1px solid rgba(255, 255, 255, 0.349);">
+        <div class="left-bar" style="position: relative;">
+            <div class="extn-section">
+                <i class="fa-brands fa-html5"></i>
+                <span class="ext-html">index.html</span>
+                <i class="fa-solid fa-xmark" id="end" onclick="extnClose()"></i>
+            </div>
+            <div class="extn-section1">
+            </div>
+            <hr id="line" style="border: 0.1px solid var(--grey-color);">
+            <hr id="line1" style="border: 0.1px solid var(--grey-color);">
+            <hr id="line2" style="border: 0.1px solid var(--grey-color);">
+            <abbr title="Explorer (Ctrl+Shift+E)"><i class="fa-regular fa-file" onclick="showMenu()"></i></abbr>
+            <abbr title="Search (Ctrl+Shift+F)"><i class="fa fa-search" onclick="showingMenu()"></i></abbr>
+            <abbr title="Source Control (Ctrl+Shift+G)"><i class='fas fa-code-branch' onclick="showedMenu()"></i></abbr>
+            <abbr title="Run and Debug (Ctrl+Shift+D)"><i class="bx bx-bug" onclick="showdebugMenu()"></i></abbr>
+            <abbr title="Extensions (Ctrl+Shift+X)"><i id="extension" class="fa-solid fa-table-cells-large"
+                    onclick="showextensionMenu()"></i></abbr>
+            <abbr title="Live Share"><i class="fa-regular fa-share-from-square"></i></abbr>
+            <abbr title="Accounts"><i class='far fa-user-circle' onclick="showOrHides()"></i></abbr>
+            <abbr title="Manage"><i class="fa fa-gear" onclick="showOrHide()"></i></abbr>
+            <div class="editor-container">
+                <div id="editor">
+
+                </div>
+            </div>
+            <div class="off-canvas-menu">
+                <div class="menu-header">
+                    <p id="exp">EXPLORER</p>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </div>
+                <ul class="hirerchial">
+                    <span class="rightAngle"></span>
+                    <span class="ti ti-folder"></span>NO FOLDER OPEN
+                    <ul class="nested">
+                        <li class="html6"><span class="ti ti-image"></span><i class="fa-brands fa-html5"
+                                onclick="extnOpen()"></i>HTML FILES</li>
+                        <li class="html7"><span class="ti ti-image"></span><i class="fa-brands fa-css3-alt"></i>CSS
+                            FILES</li>
+                        <li class="html8"><span class="ti ti-image"></span><i class="fa-brands fa-js"></i>JS FILES</li>
+                    </ul>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+            <div class="search-canvas-menu">
+                <i class="fa-solid fa-xmark" onclick="closingMenu()"></i>
+                <span class="search-s">SEARCH</span>
+                <span class="search-s1"><i class="fa-solid fa-rotate-right fa-rotate-270"></i></span>
+                <span class="file-plus"><i class='far fa-file' id="fileplus"></i></span>
+                <div class="container-replace">
+                    <div class="search-code">
+                        <input type="search" placeholder="Search" class="search-filter">
+                    </div>
+                    <div class="search-replace">
+                        <input type="search" placeholder="Replace" class="search-filter">
+                    </div>
+                </div>
+            </div>
+            <div class="git-canvas-menu">
+                <i class="fa-solid fa-xmark" onclick="closedMenu()"></i>
+                <div class="source-control">
+                    <p>SOURCE CONTROL</p>
+                </div>
+                <hr id="gitline">
+                <div class="paragraph">
+                    <p style="color: white">Install Git, a popular source control system, to track code changes and
+                        collaborate with others. Learn more in our <a
+                            href="https://code.visualstudio.com/docs/sourcecontrol/overview" target="_blank">Git
+                            guides.</a></p>
+                    <a href="https://git-scm.com/download/win" target="_blank"><button id="gitbtn">Download Git for
+                            Windows</button></a>
+                    <p style="color: white">
+                        After installing, please <a href="">reload</a>(or <a href="">troubleshoot</a> ).Additional
+                        source control providers can be installed <a href="">from the Marketplace</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="debug-canvas-menu">
+                <i class="fa-solid fa-xmark" onclick="closedebugMenu()"></i>
+                <p id="runs" style="color: white">RUN AND DEBUG:RUN</p>
+                <hr>
+                <button id="runbtn">Run and Debug</button>
+                <div class="paragraph1">
+                    <p style="color: white">To customize Run and Debug <a href="">create a launch.json fle</a>.
+                        <br>
+                        <br>
+                        <a href="">Show all automatic debug configurations</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="settings1">
+                <div class="manager">
+                    <span class="manage0">Command Palette...</span>
+                    <span class="manager1">Ctrl+Shift+P</span>
+                </div>
+                <hr>
+                <div class="manager">
+                    <span class="manage0">Profiles (Default)</span>
+                    <span class="span02">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+                <div class="manager">
+                    <span class="manage0">Turn on Settings Sync...</span>
+                </div>
+                <hr>
+                <div class="manager">
+                    <span class="manage0">Settings</span>
+                    <span class="manager1">Ctrl+,</span>
+                </div>
+                <div class="manager">
+                    <span class="manage0">Extensions</span>
+                    <span class="manager1">Ctrl+Shift+X</span>
+                </div>
+                <div class="manager">
+                    <span class="manage0">Keyboard Shortcuts</span>
+                    <span class="manager1">Ctrl+K Ctrl+S</span>
+                </div>
+                <div class="manager">
+                    <span class="manage0">User Snippets</span>
+                </div>
+                <div class="manager" onclick="divThemes()">
+                    <span class="manage0">Themes</span>
+                    <span class="span02">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <div class="darklightmode">
+                    <div class="darks-container">
+                        <p id="color">Color Theme Changer</p>
+                        <div id="dark-btn">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="manager">
+                    <span class="manage0">Check for Updates...</span>
+                </div>
+            </div>
+            <div class="settings2">
+                <div class="managerss">
+                    <span class="manage0">You are not signed into any account</span>
+                </div>
+                <hr>
+                <div class="managerss">
+                    <span class="manage0">Turn on Settings Sync...</span>
+                </div>
+                <hr>
+                <div class="managerss">
+                    <span class="manage0">Turn on Cloud Changes...</span>
+                </div>
+                <hr>
+                <div class="managerss">
+                    <span class="manage0">Turn on Remote Tunnel Access...</span>
+                </div>
+            </div>
+
+
+            <div class="resizing">
+                <flex class="v" style="flex: 1;">
+                    <flex-item style="flex: 1; background-color: transparent;">
+                    </flex-item>
+                    <flex-resizer></flex-resizer>
+                    <flex class="h" style="flex: 1;">
+
+                        <flex class="v" style="flex: 2; ">
+                            <flex-item style="flex: 1; background: rgb(0, 0, 0);"></flex-item>
+                            <div class="resize-contents">
+                                <ul class="ull">
+                                    <li class="lii">PROBLEMS</li>
+                                    <li class="lii">OUTPUT</li>
+                                    <li class="lii">DEBUG CONSOLE</li>
+                                    <li class="lii">TERMINAL
+
+                                    </li>
+                                    <div class="linings"></div>
+                                </ul>
+                            </div>
+                            <div class="terminal-tab">
+
+                            </div>
+                            <div class="power-shell">
+                                <span class="power-span"></span>
+                                <div class="terminal-logo">
+                                    <i class="fa-solid fa-terminal"></i>
+                                </div>
+                                <span class="poweshell-f">powershell</span>
+                                <div class="adder">
+                                    <span class="adder1"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="adder2"><i class="fa-solid fa-chevron-down"></i></span>
+                                </div>
+                                <span class="split-terminalss">
+
+                                </span>
+                                <span class="split-ter">
+
+                                </span>
+                                <span class="deleter">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </span>
+                                <span class="doter">
+                                    <i class="fa-solid fa-ellipsis" id="doting"></i>
+                                </span>
+                                <span class="upperarr">
+                                    <i class="fa-solid fa-chevron-up" id="upperrr"></i>
+                                </span>
+                                <span class="existing">
+                                    <i class="fa-solid fa-xmark" id="exist01"></i>
+                                </span>
+                            </div>
+                        </flex>
+
+                    </flex>
+                </flex>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.17.0/ace.js"></script>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
