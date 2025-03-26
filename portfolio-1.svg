@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" fill="#f0f4f8"/>
+  
+  <!-- E-commerce Website Mockup -->
+  <rect x="50" y="50" width="300" height="200" rx="5" fill="white" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="300" height="40" rx="5" fill="#4e57d4"/>
+  
+  <!-- Logo -->
+  <text x="70" y="75" font-family="Arial" font-size="16" fill="white" font-weight="bold">E-SHOP</text>
+  
+  <!-- Navigation -->
+  <circle cx="300" cy="70" r="5" fill="white"/>
+  <circle cx="320" cy="70" r="5" fill="white"/>
+  <circle cx="340" cy="70" r="5" fill="white"/>
+  
+  <!-- Hero Section -->
+  <rect x="70" y="110" width="260" height="80" fill="#f9f9f9"/>
+  
+  <!-- Product Grid -->
+  <rect x="70" y="200" width="80" height="30" rx="3" fill="#ff6b6b" opacity="0.7"/>
+  <rect x="160" y="200" width="80" height="30" rx="3" fill="#2ecc71" opacity="0.7"/>
+  <rect x="250" y="200" width="80" height="30" rx="3" fill="#4e57d4" opacity="0.7"/>
+  
+  <!-- Chart Element -->
+  <g transform="translate(200, 150) scale(0.5)">
+    <path d="M0,0 L30,-30 L60,-20 L90,-50 L120,-40 L150,-70" fill="none" stroke="#4e57d4" stroke-width="3"/>
+    <circle cx="0" cy="0" r="4" fill="#4e57d4"/>
+    <circle cx="30" cy="-30" r="4" fill="#4e57d4"/>
+    <circle cx="60" cy="-20" r="4" fill="#4e57d4"/>
+    <circle cx="90" cy="-50" r="4" fill="#4e57d4"/>
+    <circle cx="120" cy="-40" r="4" fill="#4e57d4"/>
+    <circle cx="150" cy="-70" r="4" fill="#4e57d4"/>
+  </g>
+  
+  <!-- Text Elements -->
+  <rect x="80" y="120" width="100" height="10" rx="2" fill="#333"/>
+  <rect x="80" y="140" width="80" height="8" rx="2" fill="#777"/>
+  <rect x="80" y="155" width="60" height="8" rx="2" fill="#777"/>
+  
+  <!-- Digital Marketing Label -->
+  <rect x="70" y="250" width="120" height="20" rx="3" fill="#4e57d4" opacity="0.9"/>
+  <text x="130" y="265" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Digital Marketing</text>
+</svg>

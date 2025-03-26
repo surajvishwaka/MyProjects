@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" fill="#f0f4f8"/>
+  
+  <!-- Content Marketing Dashboard Mockup -->
+  <rect x="50" y="50" width="300" height="200" rx="5" fill="white" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="300" height="40" rx="5" fill="#9b59b6"/>
+  
+  <!-- Logo -->
+  <text x="70" y="75" font-family="Arial" font-size="16" fill="white" font-weight="bold">CONTENT PRO</text>
+  
+  <!-- Content Calendar -->
+  <rect x="70" y="110" width="260" height="120" rx="5" fill="#f9f9f9"/>
+  
+  <!-- Calendar Grid -->
+  <line x1="70" y1="130" x2="330" y2="130" stroke="#ddd" stroke-width="1"/>
+  <line x1="120" y1="110" x2="120" y2="230" stroke="#ddd" stroke-width="1"/>
+  <line x1="170" y1="110" x2="170" y2="230" stroke="#ddd" stroke-width="1"/>
+  <line x1="220" y1="110" x2="220" y2="230" stroke="#ddd" stroke-width="1"/>
+  <line x1="270" y1="110" x2="270" y2="230" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Calendar Headers -->
+  <text x="95" y="125" font-family="Arial" font-size="10" fill="#777" text-anchor="middle">Mon</text>
+  <text x="145" y="125" font-family="Arial" font-size="10" fill="#777" text-anchor="middle">Tue</text>
+  <text x="195" y="125" font-family="Arial" font-size="10" fill="#777" text-anchor="middle">Wed</text>
+  <text x="245" y="125" font-family="Arial" font-size="10" fill="#777" text-anchor="middle">Thu</text>
+  <text x="295" y="125" font-family="Arial" font-size="10" fill="#777" text-anchor="middle">Fri</text>
+  
+  <!-- Content Items -->
+  <rect x="75" y="140" width="40" height="25" rx="3" fill="#9b59b6" opacity="0.7"/>
+  <text x="95" y="155" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Blog Post</text>
+  
+  <rect x="125" y="175" width="40" height="25" rx="3" fill="#3498db" opacity="0.7"/>
+  <text x="145" y="190" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Social</text>
+  
+  <rect x="175" y="140" width="40" height="25" rx="3" fill="#f39c12" opacity="0.7"/>
+  <text x="195" y="155" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Video</text>
+  
+  <rect x="225" y="175" width="40" height="25" rx="3" fill="#2ecc71" opacity="0.7"/>
+  <text x="245" y="190" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Email</text>
+  
+  <rect x="275" y="140" width="40" height="25" rx="3" fill="#e74c3c" opacity="0.7"/>
+  <text x="295" y="155" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Podcast</text>
+  
+  <!-- Content Metrics -->
+  <g transform="translate(100, 220)">
+    <circle cx="0" cy="0" r="8" fill="#9b59b6" opacity="0.7"/>
+    <text x="15" y="4" font-family="Arial" font-size="10" fill="#333">5 Blog Posts</text>
+  </g>
+  
+  <g transform="translate(200, 220)">
+    <circle cx="0" cy="0" r="8" fill="#3498db" opacity="0.7"/>
+    <text x="15" y="4" font-family="Arial" font-size="10" fill="#333">12 Social Posts</text>
+  </g>
+  
+  <g transform="translate(300, 220)">
+    <circle cx="0" cy="0" r="8" fill="#f39c12" opacity="0.7"/>
+    <text x="15" y="4" font-family="Arial" font-size="10" fill="#333">3 Videos</text>
+  </g>
+  
+  <!-- Content Label -->
+  <rect x="70" y="260" width="120" height="20" rx="3" fill="#9b59b6" opacity="0.9"/>
+  <text x="130" y="275" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Content Creation</text>
+</svg>

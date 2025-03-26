@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" fill="#f0f4f8"/>
+  
+  <!-- PPC Dashboard Mockup -->
+  <rect x="50" y="50" width="300" height="200" rx="5" fill="white" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="300" height="40" rx="5" fill="#3498db"/>
+  
+  <!-- Logo -->
+  <text x="70" y="75" font-family="Arial" font-size="16" fill="white" font-weight="bold">PPC MANAGER</text>
+  
+  <!-- Campaign Performance -->
+  <rect x="70" y="110" width="260" height="120" rx="5" fill="#f9f9f9"/>
+  
+  <!-- Chart -->
+  <g transform="translate(100, 170)">
+    <!-- Chart Base -->
+    <line x1="0" y1="0" x2="200" y2="0" stroke="#ddd" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#ddd" stroke-width="1"/>
+    
+    <!-- Chart Bars -->
+    <rect x="20" y="-30" width="15" height="30" fill="#3498db" opacity="0.7"/>
+    <rect x="40" y="-40" width="15" height="40" fill="#3498db" opacity="0.7"/>
+    <rect x="60" y="-25" width="15" height="25" fill="#3498db" opacity="0.7"/>
+    <rect x="80" y="-45" width="15" height="45" fill="#3498db" opacity="0.7"/>
+    <rect x="100" y="-35" width="15" height="35" fill="#3498db" opacity="0.7"/>
+    <rect x="120" y="-50" width="15" height="50" fill="#3498db" opacity="0.7"/>
+    <rect x="140" y="-40" width="15" height="40" fill="#3498db" opacity="0.7"/>
+    
+    <!-- Trend Line -->
+    <path d="M27,0 L27,-30 L47,-40 L67,-25 L87,-45 L107,-35 L127,-50 L147,-40" fill="none" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Campaign Metrics -->
+  <g transform="translate(100, 120)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Campaign Metrics</text>
+    <text x="0" y="20" font-family="Arial" font-size="10" fill="#777">Clicks: 12,450</text>
+    <text x="0" y="35" font-family="Arial" font-size="10" fill="#777">Impressions: 245,890</text>
+    <text x="0" y="50" font-family="Arial" font-size="10" fill="#777">CTR: 5.06%</text>
+  </g>
+  
+  <g transform="translate(250, 120)">
+    <text x="0" y="0" font-family="Arial" font-size="12" fill="#333" font-weight="bold">Performance</text>
+    <text x="0" y="20" font-family="Arial" font-size="10" fill="#777">Cost: $3,245</text>
+    <text x="0" y="35" font-family="Arial" font-size="10" fill="#777">Conversions: 328</text>
+    <text x="0" y="50" font-family="Arial" font-size="10" fill="#777">CPA: $9.89</text>
+  </g>
+  
+  <!-- ROI Indicator -->
+  <g transform="translate(300, 80)">
+    <circle cx="0" cy="0" r="15" fill="#2ecc71" opacity="0.8"/>
+    <text x="0" y="4" font-family="Arial" font-size="10" fill="white" text-anchor="middle">ROI</text>
+    <text x="0" y="-15" font-family="Arial" font-size="10" fill="#2ecc71" font-weight="bold" text-anchor="middle">+215%</text>
+  </g>
+  
+  <!-- PPC Label -->
+  <rect x="70" y="260" width="120" height="20" rx="3" fill="#3498db" opacity="0.9"/>
+  <text x="130" y="275" font-family="Arial" font-size="12" fill="white" text-anchor="middle">PPC Advertising</text>
+</svg>

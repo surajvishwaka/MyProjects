@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" fill="#f0f4f8"/>
+  
+  <!-- Social Media Management Dashboard Mockup -->
+  <rect x="50" y="50" width="300" height="200" rx="5" fill="white" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="300" height="40" rx="5" fill="#e74c3c"/>
+  
+  <!-- Logo -->
+  <text x="70" y="75" font-family="Arial" font-size="16" fill="white" font-weight="bold">SOCIAL MANAGER</text>
+  
+  <!-- Social Media Platforms -->
+  <rect x="70" y="110" width="260" height="120" rx="5" fill="#f9f9f9"/>
+  
+  <!-- Platform Icons -->
+  <g transform="translate(100, 140)">
+    <circle cx="0" cy="0" r="20" fill="#4267B2" opacity="0.9"/>
+    <text x="0" y="5" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">f</text>
+    
+    <rect x="-15" y="30" width="30" height="5" rx="2" fill="#333"/>
+    <rect x="-15" y="40" width="20" height="5" rx="2" fill="#777"/>
+    <rect x="-15" y="50" width="25" height="5" rx="2" fill="#777"/>
+  </g>
+  
+  <g transform="translate(170, 140)">
+    <circle cx="0" cy="0" r="20" fill="#1DA1F2" opacity="0.9"/>
+    <text x="0" y="5" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">t</text>
+    
+    <rect x="-15" y="30" width="30" height="5" rx="2" fill="#333"/>
+    <rect x="-15" y="40" width="20" height="5" rx="2" fill="#777"/>
+    <rect x="-15" y="50" width="25" height="5" rx="2" fill="#777"/>
+  </g>
+  
+  <g transform="translate(240, 140)">
+    <circle cx="0" cy="0" r="20" fill="#E1306C" opacity="0.9"/>
+    <text x="0" y="5" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">i</text>
+    
+    <rect x="-15" y="30" width="30" height="5" rx="2" fill="#333"/>
+    <rect x="-15" y="40" width="20" height="5" rx="2" fill="#777"/>
+    <rect x="-15" y="50" width="25" height="5" rx="2" fill="#777"/>
+  </g>
+  
+  <g transform="translate(310, 140)">
+    <circle cx="0" cy="0" r="20" fill="#0077B5" opacity="0.9"/>
+    <text x="0" y="5" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">in</text>
+    
+    <rect x="-15" y="30" width="30" height="5" rx="2" fill="#333"/>
+    <rect x="-15" y="40" width="20" height="5" rx="2" fill="#777"/>
+    <rect x="-15" y="50" width="25" height="5" rx="2" fill="#777"/>
+  </g>
+  
+  <!-- Calendar Icon -->
+  <g transform="translate(310, 80)">
+    <rect x="-10" y="-10" width="20" height="20" rx="2" fill="#e74c3c" opacity="0.7"/>
+    <line x1="-5" y1="-5" x2="5" y2="-5" stroke="white" stroke-width="1"/>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="white" stroke-width="1"/>
+    <line x1="-5" y1="5" x2="5" y2="5" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Social Media Label -->
+  <rect x="70" y="260" width="160" height="20" rx="3" fill="#e74c3c" opacity="0.9"/>
+  <text x="150" y="275" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Social Media Management</text>
+</svg>
